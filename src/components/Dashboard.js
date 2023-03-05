@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "../styles/dashboard.css";
 import "../styles/pagination.css";
-import config from "../config";
+import config from "../constants/config";
 import UserTable from "./UserTable";
 import Searchbar from "./Searchbar";
 import Loader from "./Loader";
 import DeleteButton from "./DeleteButton";
 import Pagination from "./Pagination";
+import axios from "axios";
 
 const Dashboard = () => {
   const [users, setUsers] = useState([]);
