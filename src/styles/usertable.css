@@ -1,17 +1,29 @@
 .edit-btn {
     border-radius: 8px;
-    color: #6495ED;
+    color: #1C86EE;
     background: white;
     border:1px solid #808080;
     margin-right: 4px;
 }
 
+.edit-btn:hover,
+.edit-btn:active {
+    color: white;
+    background: #1C86EE;
+}
+
 .delete-btn {
     border-radius: 8px;
-    color: red;
+    color: #FF3161;
     background: white;
     border:1px solid #808080;
     margin-left: 4px;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+    color: white;
+    background: #FF3161;
 }
 
 .table-row {
