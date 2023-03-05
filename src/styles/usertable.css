@@ -14,9 +14,13 @@
     margin-left: 4px;
 }
 
-.table-row:hover {
-    background-color: #E5E4E2;
+.table-row {
+    background-color: gray;
 }
+
+/* #table-rows:hover {
+    background-color: #E5E4E2;
+} */
 
 /* .table-input:hover {
     background: #808080;

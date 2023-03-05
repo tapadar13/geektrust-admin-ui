@@ -40,7 +40,7 @@ const UserTable = ({ users, onCheck, onDelete, setUsers }) => {
             updateUser === user.id ? (
               <Edit user={user} users={users} setUsers={setUsers} />
             ) : (
-              <tr key={user.id} className="table-row">
+              <tr key={user.id} className={user.isChecked ? "table-row" : ""}>
                 <td className="table-cell">
                   <input
                     type="checkbox"
