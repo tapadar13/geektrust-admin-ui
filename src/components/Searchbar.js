@@ -9,7 +9,7 @@ const Searchbar = ({ term, searchKeyword }) => {
   };
 
   return (
-    <div>
+    <>
       <input
         ref={inputElem}
         type="text"
@@ -18,7 +18,7 @@ const Searchbar = ({ term, searchKeyword }) => {
         onChange={getSearchTerm}
         className="search-bar"
       />
-    </div>
+    </>
   );
 };
 

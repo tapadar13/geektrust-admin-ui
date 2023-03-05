@@ -34,8 +34,6 @@ const Dashboard = () => {
   }, []);
 
   const handleOnCheck = (e) => {
-    // const checkbox = document.getElementsByClassName("checkbox").classList.add("table-input");
-
     console.log(e.target.checked);
     const { name, checked } = e.target;
     if (name === "allSelected") {
@@ -82,10 +80,9 @@ const Dashboard = () => {
   const indexOfLastUser = currentPage * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
   const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
-  // console.log(currentUsers);
 
   return (
-    <div className="App">
+    <>
       <Searchbar term={searchTerm} searchKeyword={searchHandler} />
       {loading ? (
         <Loader />
@@ -112,7 +109,7 @@ const Dashboard = () => {
           </div>
         </>
       )}
-    </div>
+    </>
   );
 };
 

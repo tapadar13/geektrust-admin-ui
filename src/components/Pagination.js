@@ -1,31 +1,36 @@
 import React from "react";
 
-const Pagination = ({ usersPerPage, totalUsers, currentPage, setCurrentPage }) => {
+const Pagination = ({
+  usersPerPage,
+  totalUsers,
+  currentPage,
+  setCurrentPage,
+}) => {
   const pageNumbers = [];
-  const nPages = Math.ceil(totalUsers / usersPerPage)
+  const nPages = Math.ceil(totalUsers / usersPerPage);
 
   for (let i = 1; i <= nPages; i++) {
     pageNumbers.push(i);
   }
 
   const prevPage = () => {
-    if(currentPage !== 1) {
+    if (currentPage !== 1) {
       setCurrentPage(currentPage - 1);
     }
-  }
+  };
 
   const nextPage = () => {
-    if(currentPage !== nPages) {
+    if (currentPage !== nPages) {
       setCurrentPage(currentPage + 1);
     }
-  }
+  };
   const startPage = () => {
     setCurrentPage(1);
-  }
+  };
 
   const endPage = () => {
     setCurrentPage(Math.ceil(totalUsers / usersPerPage));
-  }
+  };
 
   return (
     <nav>
@@ -42,7 +47,11 @@ const Pagination = ({ usersPerPage, totalUsers, currentPage, setCurrentPage }) =
         </li>
         {pageNumbers.map((number) => (
           <li key={number} className="page-item">
-            <a href="!#" onClick={() => setCurrentPage(number)} className="page-link">
+            <a
+              href="!#"
+              onClick={() => setCurrentPage(number)}
+              className="page-link"
+            >
               {number}
             </a>
           </li>
