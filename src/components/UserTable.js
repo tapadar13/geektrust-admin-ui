@@ -47,7 +47,6 @@ const UserTable = ({ users, onCheck, onDelete, setUsers }) => {
                     name={user.id}
                     checked={user?.isChecked || false}
                     onChange={onCheck}
-                    className="checkbox"
                   />
                 </td>
                 <td>{user?.name}</td>
