@@ -1,0 +1,31 @@
+.edit-btn {
+    border-radius: 8px;
+    color: #6495ED;
+    background: white;
+    border:1px solid #808080;
+    margin-right: 4px;
+}
+
+.delete-btn {
+    border-radius: 8px;
+    color: red;
+    background: white;
+    border:1px solid #808080;
+    margin-left: 4px;
+}
+
+.table-row:hover {
+    background-color: #E5E4E2;
+}
+
+/* .table-input:hover {
+    background: #808080;
+} */
+
+.table-cell:hover input:checked {
+    background-color: red;
+}
+
+/* .table-input:checked:after {
+    background-color: #808080;
+} */

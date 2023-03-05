@@ -1,0 +1,10 @@
+.Dashboard {
+  margin: 0 8px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.divElem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
