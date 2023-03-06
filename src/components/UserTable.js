@@ -113,7 +113,9 @@ const Edit = ({ user, users, setUsers }) => {
         />
       </td>
       <td>
-        <button type="submit" className="update-btn">Update</button>
+        <button type="submit" className="update-btn">
+          Update
+        </button>
       </td>
     </tr>
   );
