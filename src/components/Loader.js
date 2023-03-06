@@ -4,7 +4,7 @@ const Loader = () => {
   return (
     <Box display={"flex"} justifyContent="center">
       <CircularProgress color="secondary" />
-      <Typography>Loading ... </Typography>
+      <Typography>Loading... </Typography>
     </Box>
   );
 };

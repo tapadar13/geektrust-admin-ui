@@ -61,6 +61,7 @@ const Dashboard = () => {
     setUsers(filteredUsers);
   };
 
+  // Searchbar
   const searchHandler = (searchTerm) => {
     setSearchTerm(searchTerm);
     if (searchTerm !== "") {
