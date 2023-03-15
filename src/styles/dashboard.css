@@ -9,3 +9,11 @@
   align-items: center;
   margin-right: 48px;
 }
+
+@media screen and (max-width: 992px) {
+  .divElem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

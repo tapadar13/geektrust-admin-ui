@@ -1,3 +1,21 @@
 .pagination {
   margin-left: 392px;
 }
+
+@media screen and (max-width: 576px) {
+  .pagination {
+    margin: 2px 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    margin: 2px 0 0 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pagination {
+    margin: 2px 0 0 18px;
+  }
+}
